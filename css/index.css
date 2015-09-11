@@ -1,0 +1,237 @@
+/**
+ * @file style for tb bravo weekly
+ * @author dengxi
+ * @date 2015-09-08
+ */
+.index {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #cfd2da;
+    background-color: #252830;
+}
+
+.index a {
+    transition: all .3s ease;
+}
+
+.index a:active {
+    color: #16A085;
+}
+
+.weekly-header {
+    margin-bottom: 30px;
+    background-color: #16A085;
+}
+
+.weekly-title {
+    float: left;
+    font-size: 4em;
+    line-height: 2.2;
+    margin: 0 0 0 10%;
+    color: #fff;
+    text-shadow: rgb(20, 144, 120) 1px 1px,
+    rgb(20, 144, 120) 2px 2px,
+    rgb(20, 144, 120) 3px 3px,
+    rgb(20, 144, 120) 4px 4px,
+    rgb(20, 144, 120) 5px 5px,
+    rgb(20, 144, 120) 6px 6px,
+    rgb(20, 144, 120) 7px 7px,
+    rgb(20, 144, 120) 8px 8px,
+    rgb(20, 144, 120) 9px 9px,
+    rgb(20, 144, 120) 10px 10px,
+    rgb(20, 144, 120) 11px 11px,
+    rgb(20, 144, 120) 12px 12px,
+    rgb(20, 144, 120) 13px 13px,
+    rgb(20, 145, 121) 14px 14px,
+    rgb(20, 146, 122) 15px 15px,
+    rgb(20, 147, 122) 16px 16px,
+    rgb(20, 148, 123) 17px 17px,
+    rgb(20, 149, 124) 18px 18px,
+    rgb(20, 150, 125) 19px 19px,
+    rgb(20, 151, 125) 20px 20px,
+    rgb(21, 152, 126) 21px 21px,
+    rgb(21, 152, 127) 22px 22px,
+    rgb(21, 153, 127) 23px 23px,
+    rgb(21, 154, 128) 24px 24px,
+    rgb(21, 155, 129) 25px 25px,
+    rgb(21, 156, 130) 26px 26px,
+    rgb(21, 157, 130) 27px 27px,
+    rgb(21, 158, 131) 28px 28px,
+    rgb(21, 159, 132) 29px 29px,
+    rgb(22, 160, 133) 30px 30px;
+}
+
+.weekly-meta {
+    float: right;
+    margin-top: 60px;
+    line-height: 1;
+    margin-right: 10%;
+    color: #E1E5ED;
+}
+
+.weekly-meta a {
+    color: #E1E5ED;
+}
+
+.weekly-meta a:hover {
+    color: #fff;
+}
+
+.section-title strong {
+    font-size: 2em;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.weekly-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-wrap {
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+}
+
+.article-list a {
+    color: #1B89B3;
+    transition: all .3s ease;
+}
+
+.article-list a:hover {
+    color: #21BBF5;
+    text-decoration: none;
+}
+
+.article-item {
+    margin-bottom: .5em;
+}
+
+.footer {
+    width: 80%;
+    margin: 60px auto 0 auto;
+}
+
+.separate {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.separate::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    background-color: #434857;
+}
+
+.separate-text {
+    padding: 0 1em;
+    position: relative;
+    z-index: 2;
+    color: #6f7890;
+    background-color: #252830;
+}
+
+.footer-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+    list-style: none;
+    color: #6f7890;
+}
+
+.footer-list {
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+.footer-item .glyphicon {
+    margin-right: .5em;
+}
+
+.footer-item a {
+    color: #6f7890;    
+}
+
+@media screen and (max-width: 640px) {
+    .index {
+        font-size: 16px;
+    }
+
+    .weekly-title {
+        margin-left: 5%;
+        font-size: 3.6em;
+    }
+
+    .weekly-meta {
+        margin: 0 5% .5em 0;
+    }
+
+    .weekly-meta p {
+        float: left;
+    }
+
+    .tswk-reviewer {
+        margin-left: 2em;
+    }
+
+    .weekly-content {
+        width: 90%;
+    }
+
+    .section-wrap {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section-title {
+        text-align: center;
+        position: relative;
+    }
+
+    .section-title::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #cfd2da;
+        position: absolute;
+        top: 50%;
+    }
+
+    .section-title span {
+        background-color: #252830;
+        padding: 0 .5em;
+        position: relative;
+        z-index: 2;
+    }
+
+    .footer {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .footer-item {
+        width: 33%;
+    }
+
+    .copyright {
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .footer-item .glyphicon {
+        margin-right: .2em;
+    }
+
+    .footer-text {
+        display: none;
+    }
+}
