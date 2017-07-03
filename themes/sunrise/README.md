@@ -1,27 +1,27 @@
-# Landscape
+# sunrise
 
 A brand new default theme for [Hexo].
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+- [Preview](http://hexo.io/hexo-theme-sunrise/)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+$ git clone https://github.com/hexojs/hexo-theme-sunrise.git themes/sunrise
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+**sunrise requires Hexo 2.4 and above.**
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+Modify `theme` setting in `_config.yml` to `sunrise`.
 
 ### Update
 
 ``` bash
-cd themes/landscape
+cd themes/sunrise
 git pull
 ```
 
@@ -69,7 +69,7 @@ google_plus:
 
 ### Fancybox
 
-Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+sunrise uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
 
 ```
 ![img caption](img url)
@@ -81,7 +81,7 @@ Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax o
 
 You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
 
-Landscape provides 5 built-in widgets:
+sunrise provides 5 built-in widgets:
 
 - category
 - tag

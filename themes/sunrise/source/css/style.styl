@@ -30,12 +30,6 @@ body
   font: font-size font-sans
   -webkit-text-size-adjust: 100%
 
-.outer
-  clearfix()
-  max-width: (column-width + gutter-width) * columns + gutter-width
-  margin: 0 auto
-  padding: 0 gutter-width
-
 .inner
   column(columns)
 
@@ -67,9 +61,12 @@ body
     left: mobile-nav-width
 
 if sidebar and sidebar isnt bottom
+  .outer
+    @media mq-normal
+      display: flex
   #main
     @media mq-normal
-      column(main-column)
+      margin: 0 20px
 
 if sidebar is left
   @media mq-normal
