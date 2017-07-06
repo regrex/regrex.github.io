@@ -4,7 +4,7 @@ tags: vue
 ---
 ## Vue.js简介
 
-> 数据驱动的组件，为现代化的 Web 界面而生。文档及社区生态都很活跃，有口皆碑。
+数据驱动的组件，为现代化的 Web 界面而生。文档及社区生态都很活跃，有口皆碑。
 
 - [中文官网](http://vuejs.org.cn/)
 - [资源列表](https://github.com/vuejs/awesome-vue)

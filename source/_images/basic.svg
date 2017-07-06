@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <marker id="markerSquare" markerWidth="7" markerHeight="7" refX="4" refY="4"
+          orient="auto">
+        <rect x="1" y="1" width="5" height="5" style="stroke: none; fill:#8BC34A;"/>
+    </marker>
+    <marker id="markerArrow" markerWidth="13" markerHeight="13" refX="2" refY="7"
+            orient="auto">
+        <path d="M2,2 L2,13 L8,7 L2,2" style="fill: #8BC34A;" />
+    </marker>
+    <text id="textRef">this is text for ref</text>
+    <path id="textPathRef" d="M10,410 a1,1 0 0,0 100,0"/>
+    <pattern id="pattern1" x="10" y="10" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <circle cx="10" cy="10" r="10" style="stroke: #2196F3; fill: #03A9F4;"></circle>
+    </pattern>
+    <linearGradient id="linearGradient1" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+      <stop offset="0%" stop-color="#ff5722" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFC107" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="clipPath1">
+      <path d="M400,10 q60,60 100,0 q50,50 50,50 l40,0 l-40,40 l-100,-20"/>
+    </clipPath>
+    <mask id="mask1" x="0" y="0" width="100" height="100">
+      <rect x="10" y="410" width="100" height="30" style="stroke: none; fill: #333333;"/>
+      <rect x="10" y="440" width="100" height="30" style="stroke: none; fill: #FFFFFF;"/>
+    </mask>
+    <filter id="filter1" y="-5" height="40">
+      <feGaussianBlur in="SourceGraphiic" stdDeviation="3" y="-"/>
+    </filter>
+  </defs>
+  <g>
+    <rect x="400" y="10" width="300" height="80" style="stroke: #4CAF50; fill: #8BC34A; clip-path: url(#clipPath1);"/>
+  </g>
+  <g>
+    <rect x="10" y="10" height="40" width="40" style="stroke: #4CAF50; fill: #8BC34A;">
+      <animateMotion path="M10,50 q60,50 100,0 q60,-50 100,0" begin="0s" dur="5s" rotate="auto"/>
+    </rect>
+    <rect x="60" y="10" height="40" width="40" rx="6" ry="6" style="stroke: #4CAF50; fill: #8BC34A;">
+      <animate id="animateOne" attributeName="x" attributeType="XML" from="60" to="200" begin="0s" dur="2.5s" fill="freeze"/>
+      <animate attributeName="y" attributeType="XML" from="10" to="200" begin="animateOne.end" dur="2.5s" fill="freeze"/>
+    </rect>
+    <rect x="110" y="10" height="40" width="40" rx="6" ry="20" style="stroke: #4CAF50; fill: #8BC34A;">
+      <animate attributeName="x" attributeType="XML" from="110" to="300" begin="0s" dur="5s" fill="freeze"/>
+      <animate attributeName="y" attributeType="XML" from="10" to="200" begin="0s" dur="5s" fill="freeze"/>
+    </rect>
+    <rect x="160" y="10" height="40" width="40" rx="20" ry="20" style="stroke: #4CAF50; fill: #8BC34A;"/>
+    <rect x="10" y="60" height="40" width="40" style="stroke: #4CAF50; fill: none;"/>
+    <rect x="60" y="60" height="40" width="40" rx="6" ry="6" style="stroke: #4CAF50; stroke-width: 2; fill: url(#pattern1);"/>
+    <rect x="110" y="60" height="40" width="40" rx="6" ry="20" style="stroke: #4CAF50; stroke-dasharray: 5 10; fill: none;"/>
+    <rect x="160" y="60" height="40" width="40" rx="20" ry="20" style="stroke: #4CAF50; fill: #8BC34A; fill-opacity: 0.3;"/>
+  </g>
+  <g>
+    <a xlink:href="https://regrex.github.io/" target="_blank">
+      <rect x="210" y="10" height="40" width="70" style="stroke: #4CAF50; fill: #8BC34A;"/>
+      <text x="220" y="34" style="stroke: #FFFFFF; fill: #8BC34A; font-size: 12px;">click me</text>
+    </a>
+  </g>
+  <g>
+    <circle cx="30" cy="130" r="20" style="stroke: #4CAF50; fill: #8BC34A;">
+      <set attributeName="r" attributeType="XML" to="10" begin="1s"/>
+    </circle>
+    <circle cx="80" cy="130" r="20" style="stroke: none; fill: url(#linearGradient1);"/>
+    <circle cx="130" cy="130" r="20" style="stroke: #4CAF50; fill: #8BC34A; fill-opacity: 0.3;"/>
+  </g>
+  <g>
+    <ellipse cx="30" cy="180" rx="20" ry="10" style="stroke: #4CAF50; fill: #8BC34A;"/>
+    <ellipse cx="80" cy="180" rx="10" ry="20" style="stroke: #4CAF50; fill: #8BC34A;"/>
+  </g>
+  <g>
+    <line x1="10" y1="230" x2="50" y2="230" style="stroke: #4CAF50;"/>
+    <line x1="60" y1="210" x2="60" y2="250" style="stroke: #4CAF50;"/>
+    <line x1="70" y1="210" x2="110" y2="250" style="stroke: #4CAF50;"/>
+  </g>
+  <g>
+    <polyline points="10,260 50,260 30,300 10,260" style="stroke: #4CAF50; fill: #8BC34A;"/>
+    <polygon points="60,260 100,260 80,300" style="stroke: #2196F3; fill: #03A9F4;"/>
+    <polygon points="110,260 150,260 110,300" style="stroke: #2196F3; fill: #03A9F4; filter: url(#filter1);"/>
+  </g>
+  <g>
+    <path d="M10,330 l40,40" style="stroke: #4CAF50; fill: none;"/>
+    <path d="M80,330 A20,20 0 0,0 90,360" style="stroke: #4CAF50; fill: none;"/>
+    <path d="M80,330 A20,20 0 1,0 90,360" style="stroke: #2196F3; fill: none;"/>
+    <path d="M80,330 A20,20 0 0,1 90,360" style="stroke: #FF9800; fill: none;"/>
+    <path d="M80,330 A20,20 0 1,1 90,360" style="stroke: #E91E63; fill: none;"/>
+    <path d="M140,330 q0,40 40,40" style="stroke: #4CAF50; fill: none;marker-start: url(#markerSquare); marker-mid: url(#markerSquare); marker-end: url(#markerArrow);"/>
+    <path d="M200,330 c40,0 40,40 80,40" style="stroke: #4CAF50; fill: none; marker-start: url(#markerSquare); marker-mid: url(#markerSquare); marker-end: url(#markerArrow);"/>
+  </g>
+  <g>
+    <text x="10" y="410" style="stroke: #4CAF50; fill: #8BC34A; font-size: 12px; mask: url(#mask1);">
+      <textPath xlink:href="#textPathRef">This text whit text path reference</textPath>
+      <tref xlink:href="#textRef"/><!-- chrome not support -->
+    </text>
+    <text x="10" y="510" style="stroke: #4CAF50; fill: #8BC34A; font-size: 24px;">
+      <tspan dy="20 20 20 0 -20 -20 -20 0 20 20 20 0">君不见黄河之水天上来</tspan>
+      <animateTransform attributeName="transform" begin="0s" dur="4s" type="rotate" from="0 200 510" to="360 200 510" additive="sum"/>
+      <animateTransform attributeName="transform" begin="0s" dur="4s" type="scale" from="1" to="0.5" additive="sum"/>
+    </text>
+  </g>
+  <g>
+    <image x="10" y="560" width="270" height="129" xlink:href="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png"/>
+  </g>
+</svg>
