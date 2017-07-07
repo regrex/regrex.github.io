@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Vue.js初体验 | &lt;love&gt;You &amp; Me&lt;/love&gt;</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Vue.js简介数据驱动的组件，为现代化的 Web 界面而生。文档及社区生态都很活跃，有口皆碑。  中文官网 资源列表">
+<meta name="keywords" content="vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue.js初体验">
+<meta property="og:url" content="https://regrex.github.io/2016/06/30/vue-first-experience/index.html">
+<meta property="og:site_name" content="&lt;love&gt;You &amp; Me&lt;&#x2F;love&gt;">
+<meta property="og:description" content="Vue.js简介数据驱动的组件，为现代化的 Web 界面而生。文档及社区生态都很活跃，有口皆碑。  中文官网 资源列表">
+<meta property="og:image" content="http://imgsrc.baidu.com/forum/pic/item/0150fc33c895d1430bd607377bf082025baf077d.jpg">
+<meta property="og:image" content="http://imgsrc.baidu.com/forum/pic/item/091a0b738bd4b31c4ac877af8fd6277f9f2ff822.jpg">
+<meta property="og:image" content="http://imgsrc.baidu.com/forum/pic/item/c1f57fafa40f4bfb56a17d400b4f78f0f63618ac.jpg">
+<meta property="og:updated_time" content="2017-07-06T12:27:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vue.js初体验">
+<meta name="twitter:description" content="Vue.js简介数据驱动的组件，为现代化的 Web 界面而生。文档及社区生态都很活跃，有口皆碑。  中文官网 资源列表">
+<meta name="twitter:image" content="http://imgsrc.baidu.com/forum/pic/item/0150fc33c895d1430bd607377bf082025baf077d.jpg">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">&lt;love&gt;You &amp; Me&lt;/love&gt;</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">芝兰生幽谷，不以无人而不芳</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        <a id="nav-github-btn" class="nav-icon" target="_blank" href="https://github.com/regrex" title="goto github"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://regrex.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-vue-first-experience" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/30/vue-first-experience/" class="article-date">
+  <time datetime="2016-06-29T21:27:31.000Z" itemprop="datePublished">2016-06-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Vue.js初体验
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Vue-js简介"><a href="#Vue-js简介" class="headerlink" title="Vue.js简介"></a>Vue.js简介</h2><p>数据驱动的组件，为现代化的 Web 界面而生。文档及社区生态都很活跃，有口皆碑。</p>
+<ul>
+<li><a href="http://vuejs.org.cn/" target="_blank" rel="external">中文官网</a></li>
+<li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="external">资源列表</a></li>
+</ul>
+<a id="more"></a>
+<h2 id="Vue-Demo"><a href="#Vue-Demo" class="headerlink" title="Vue Demo"></a>Vue Demo</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ul>
+<li><a href="https://github.com/regrex/vue-with-vux-echarts" target="_blank" rel="external">源码</a></li>
+<li>内容<br>这个小项目主要涵盖了三部分内容，用户画像，服务统计及数据分析；涉及到数据可视化展现，故结合使用了echarts3.0。</li>
+<li>截图<ul>
+<li>画像<br><img src="http://imgsrc.baidu.com/forum/pic/item/0150fc33c895d1430bd607377bf082025baf077d.jpg" alt="enter image description here"></li>
+<li>服务<br><img src="http://imgsrc.baidu.com/forum/pic/item/091a0b738bd4b31c4ac877af8fd6277f9f2ff822.jpg" alt="enter image description here"></li>
+<li>分析<br><img src="http://imgsrc.baidu.com/forum/pic/item/c1f57fafa40f4bfb56a17d400b4f78f0f63618ac.jpg" alt="enter image description here"></li>
+</ul>
+</li>
+</ul>
+<h3 id="开发历程"><a href="#开发历程" class="headerlink" title="开发历程"></a>开发历程</h3><h4 id="initialize"><a href="#initialize" class="headerlink" title="initialize"></a>initialize</h4><p>由于之前有AngularJS的开发经验，且vue的官方文档非常易于理解，不用半天时间，基本已熟悉了vue的相关语法及特性。结合构建大型应用的vue-cli脚手架及webpack构建工具，很快就能搭建起基础代码结构。接下来的工作就是根据需求组织代码，划分页面及页面组件。我的代码组织如下：<br><figure class="highlight python"><figcaption><span>&#123; .theme-legacy &#125;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">|-- build // webpack构建相关文件</div><div class="line">|-- config // 配置文件</div><div class="line">|-- index.html // 主入口文件</div><div class="line">|-- package.json</div><div class="line">|-- README.md</div><div class="line">`-- src</div><div class="line">    |-- main.js // 主体js，调用vue及vue相关服务</div><div class="line">    |-- app.vue // 应用主入口</div><div class="line">    |-- assets // 静态资源目录，如图片，类库css文件等</div><div class="line">    |   |-- avatar-man.png</div><div class="line">    |-- components // 页面组件</div><div class="line">    |   |-- medical-log.vue</div><div class="line">    |   |-- medical-service.vue</div><div class="line">    |   |-- medical-word.vue</div><div class="line">    |   |-- rank-dept-chart.vue</div><div class="line">    |   |-- rank-disease-chart.vue</div><div class="line">    |   |-- rank-doc-chart.vue</div><div class="line">    |   |-- rank-form.vue</div><div class="line">    |   |-- rank-hosp-chart.vue</div><div class="line">    |   `-- user-card.vue</div><div class="line">    |-- router-config.js // vue-router配置</div><div class="line">    `-- views // 子页面view</div><div class="line">        |-- personal.vue</div><div class="line">        |-- rank.vue</div><div class="line">        `-- service.vue</div></pre></td></tr></table></figure></p>
+<h4 id="使用vue-router和vue-resource"><a href="#使用vue-router和vue-resource" class="headerlink" title="使用vue-router和vue-resource"></a>使用vue-router和vue-resource</h4><p>使用之前，当然是先安装package依赖，分别执行<code>npm install vue-router --save</code>和<code>npm install vue-resource --save</code>，然后就可以参考文档在vue项目里愉快的使用啦。<br><a href="http://router.vuejs.org/zh-cn/index.html" target="_blank" rel="external">vue-router</a>跟其他AngularJS的router类似，提供了SPA应用的页面路由能力，其官方文档也非常友好，使用也非常简单，在main.js里初始化router后设置配置项，然后添加路由规则即可；<a href="https://github.com/vuejs/vue-resource" target="_blank" rel="external">vue-resource</a>提供了在vue里使用Promise方式处理网络请求的能力（省去了自己写XMLHttpRequest的麻烦）。如下：<br><figure class="highlight javascript"><figcaption><span>&#123; .theme-peacock &#125;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// main.js</span></div><div class="line"><span class="comment">// import vue and vue component</span></div><div class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span>;</div><div class="line"><span class="keyword">import</span> VueRouter <span class="keyword">from</span> <span class="string">'vue-router'</span>;</div><div class="line"><span class="keyword">import</span> VueResource <span class="keyword">from</span> <span class="string">'vue-resource'</span>;</div><div class="line"><span class="keyword">import</span> &#123; configRouter &#125; <span class="keyword">from</span> <span class="string">'./router-config.js'</span>;</div><div class="line"></div><div class="line"><span class="comment">// config router</span></div><div class="line">Vue.use(VueRouter);</div><div class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123;</div><div class="line">    <span class="attr">hashbang</span>: <span class="literal">true</span></div><div class="line">&#125;);</div><div class="line">configRouter(router);</div><div class="line"></div><div class="line"><span class="comment">// use vue-resource for ajax</span></div><div class="line">Vue.use(VueResource);</div><div class="line"></div><div class="line"><span class="comment">// init vue app</span></div><div class="line"><span class="keyword">const</span> App = Vue.extend(<span class="built_in">require</span>(<span class="string">'./app.vue'</span>));</div><div class="line">router.start(App, <span class="string">'#app'</span>);</div></pre></td></tr></table></figure></p>
+<h4 id="使用vux"><a href="#使用vux" class="headerlink" title="使用vux"></a>使用vux</h4><p><a href="https://vux.li/" target="_blank" rel="external">vux</a>是基于vue和weui设计的组件库，文档也还比较齐全。不过有些组件文档上的介绍也不是特别详尽，遇到问题时，建议直接参看源码。vux的使用也非常简单，<code>npm install vux --save</code>后，在app.vue根组件下引用依赖的样式文件，然后就可以直接在vue组件里愉快的调用了。如下所示：<br><figure class="highlight plain"><figcaption><span>&#123; .theme-legacy &#125;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">&lt;!-- app.vue --&gt;</div><div class="line">&lt;template&gt;</div><div class="line">    &lt;div class=&quot;app wrapper&quot;&gt;</div><div class="line">        &lt;tab&gt;</div><div class="line">            &lt;tab-item v-link=&quot;&#123; path: &apos;/personal&apos; &#125;&quot; :selected=&quot;tabVal === &apos;personal&apos;&quot;&gt;画像&lt;/tab-item&gt;</div><div class="line">            &lt;tab-item v-link=&quot;&#123; path: &apos;/service&apos; &#125;&quot; :selected=&quot;tabVal === &apos;service&apos;&quot;&gt;服务&lt;/tab-item&gt;</div><div class="line">            &lt;tab-item v-link=&quot;&#123; path: &apos;/rank&apos; &#125;&quot; :selected=&quot;tabVal === &apos;rank&apos;&quot;&gt;分析&lt;/tab-item&gt;</div><div class="line">        &lt;/tab&gt;</div><div class="line">        &lt;div class=&quot;content-wrapper&quot;&gt;</div><div class="line">            &lt;router-view&gt;&lt;/router-view&gt;</div><div class="line">        &lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/template&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">    import XHeader from &apos;vux/src/components/x-header&apos;</div><div class="line">    import Tab from &apos;vux/src/components/tab/tab&apos;</div><div class="line">    import TabItem from &apos;vux/src/components/tab/tab-item&apos;</div><div class="line"></div><div class="line">    export default &#123;</div><div class="line">        components: &#123;</div><div class="line">            XHeader,</div><div class="line">            Tab,</div><div class="line">            TabItem</div><div class="line">        &#125;,</div><div class="line">        data() &#123;</div><div class="line">            return &#123;&#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line">    @import &apos;~vux/dist/vux.css&apos;;</div><div class="line">    body &#123;</div><div class="line">        margin: 0;</div><div class="line">        background-color: #fbf9fe;</div><div class="line">    &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
+<h4 id="在vue中使用Echarts-3-0"><a href="#在vue中使用Echarts-3-0" class="headerlink" title="在vue中使用Echarts 3.0"></a>在vue中使用Echarts 3.0</h4><p>因为Echart 3.0 本身支持webpack，故执行<code>npm install echarts --save</code>后，在代码里引入后即可使用，以rank-dept-chart.vue的条形图为例，如下：<br><figure class="highlight plain"><figcaption><span>&#123; .theme-peacock &#125;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div></pre></td><td class="code"><pre><div class="line">&lt;template&gt;</div><div class="line">    &lt;div id=&quot;dept-echart&quot; style=&quot;width: 98%; height: 400px;&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/template&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">import Echarts from &apos;echarts/lib/echarts&apos;</div><div class="line">import EchartsPie from &apos;echarts/lib/chart/pie&apos;</div><div class="line">import EchartsToolip from &apos;echarts/lib/component/tooltip&apos;</div><div class="line">import EchartsTitle from &apos;echarts/lib/component/title&apos;</div><div class="line"></div><div class="line">export default &#123;</div><div class="line">    methods: &#123;</div><div class="line">        &apos;renderChart&apos;: function () &#123;</div><div class="line">            if (!this.dept.length === 0) &#123;</div><div class="line">                return;</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            var typeMap = &#123;</div><div class="line">                appoint_count: &apos;预约量&apos;,</div><div class="line">                follow_count: &apos;关注量&apos;,</div><div class="line">                psquery_count: &apos;百度搜索量&apos;,</div><div class="line">                search_count: &apos;搜索量&apos;,</div><div class="line">                total_count: &apos;总量&apos;</div><div class="line">            &#125;;</div><div class="line">            var curRankType = this.curRankType;</div><div class="line">            var data = this.dept;</div><div class="line">            var mapList = [];</div><div class="line">            for (let i = 0; i &lt; data.length; i++) &#123;</div><div class="line">                mapList.push(&#123;</div><div class="line">                    name: data[i].res_name,</div><div class="line">                    value: data[i][curRankType],</div><div class="line">                &#125;);</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            var myDeptChart = Echarts.init(document.getElementById(&apos;dept-echart&apos;));</div><div class="line">            myDeptChart.setOption(&#123;</div><div class="line">                title : &#123;</div><div class="line">                    text: &apos;Top10科室排名&apos;,</div><div class="line">                    x:&apos;center&apos;</div><div class="line">                &#125;,</div><div class="line">                tooltip : &#123;</div><div class="line">                    trigger: &apos;item&apos;,</div><div class="line">                    formatter: &quot;&#123;a&#125; &lt;br/&gt;&#123;b&#125; : &#123;c&#125; (&#123;d&#125;%)&quot;</div><div class="line">                &#125;,</div><div class="line">                toolbox: &#123;</div><div class="line">                    show : true,</div><div class="line">                    feature : &#123;</div><div class="line">                        mark : &#123;show: true&#125;,</div><div class="line">                        dataView : &#123;show: true, readOnly: false&#125;,</div><div class="line">                        magicType : &#123;</div><div class="line">                            show: true,</div><div class="line">                            type: [&apos;pie&apos;, &apos;funnel&apos;]</div><div class="line">                        &#125;,</div><div class="line">                        restore : &#123;show: true&#125;,</div><div class="line">                        saveAsImage : &#123;show: true&#125;</div><div class="line">                    &#125;</div><div class="line">                &#125;,</div><div class="line">                calculable : true,</div><div class="line">                series : [</div><div class="line">                    &#123;</div><div class="line">                        name: typeMap[curRankType],</div><div class="line">                        type:&apos;pie&apos;,</div><div class="line">                        radius : [30, 110],</div><div class="line">                        center : [&apos;50%&apos;, 200],</div><div class="line">                        roseType : &apos;area&apos;,</div><div class="line">                        data: mapList</div><div class="line">                    &#125;</div><div class="line">                ]</div><div class="line">            &#125;);</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    events: &#123;</div><div class="line">        &apos;rankTypeChange&apos;: function (rankType) &#123;</div><div class="line">            this.curRankType = rankType;</div><div class="line">        &#125;,</div><div class="line">        &apos;dataRefresh&apos;: function (data) &#123;</div><div class="line">            this.dept = data.dept;</div><div class="line">            this.renderChart();</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    data () &#123;</div><div class="line">        return &#123;</div><div class="line">            curRankType: &apos;total_count&apos;,</div><div class="line">            dept: []</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="问题及总结"><a href="#问题及总结" class="headerlink" title="问题及总结"></a>问题及总结</h3><p>vue提供了父子组件对象引用、事件驱动、props参数传递等方式来实现组件见通信；在不是特别复杂的场景，基本上都能满足要求；不过当遇到数据处理及组件关系复杂的情况下，会感觉有点儿不痛快，通常造成这种情况有两种原因，一是组件拆分不合理，导致耦合度太高；二是需要更好的数据处理机制，比如使用vuex（vue基于flux的实现）。</p>
+<h2 id="我对Vue的感受"><a href="#我对Vue的感受" class="headerlink" title="我对Vue的感受"></a>我对Vue的感受</h2><p>vue用来做项目感觉非常畅快，代码写起来很清爽，且性能也非常不错，果然是业界口碑之作。</p>
+<p><a href="https://slides.com/regrex/vue-js/live#/" target="_blank" rel="external">附录</a></p>
+<p>末</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://regrex.github.io/2016/06/30/vue-first-experience/" data-id="cj4tk7kqc0005axf7zh5besmp" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/07/28/thinking-of-FE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          关于我的前端生涯的一些胡思乱想
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/svg/">svg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/thinking-FE/">thinking FE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活-草木/">生活 草木</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/逗比程序员-生活-IT/">逗比程序员 生活 IT</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/svg/" style="font-size: 10px;">svg</a> <a href="/tags/thinking-FE/" style="font-size: 10px;">thinking FE</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/生活-草木/" style="font-size: 10px;">生活 草木</a> <a href="/tags/逗比程序员-生活-IT/" style="font-size: 10px;">逗比程序员 生活 IT</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/07/07/play-with-svg/">技术杂－svg乱炖</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/03/vert20170702/">草木杂－欲雨</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/19/recursive-acronyms/">一个名字引发的程序员趣事</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/28/thinking-of-FE/">关于我的前端生涯的一些胡思乱想</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/30/vue-first-experience/">Vue.js初体验</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Regrex<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
