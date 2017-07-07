@@ -9,14 +9,18 @@
 <meta name="keywords" content="svg">
 <meta property="og:type" content="article">
 <meta property="og:title" content="技术杂－svg乱炖">
-<meta property="og:url" content="http://yoursite.com/2017/07/06/play-with-svg/index.html">
+<meta property="og:url" content="https://regrex.github.io/2017/07/06/play-with-svg/index.html">
 <meta property="og:site_name" content="&lt;love&gt;You &amp; Me&lt;&#x2F;love&gt;">
 <meta property="og:description" content="点我查看原图">
 <meta property="og:image" content="http://imgh.us/basic.svg">
 <meta property="og:image" content="https://www.w3.org/TR/SVG/images/paths/arcs02.svg">
 <meta property="og:image" content="https://www.w3.org/TR/SVG/images/paths/quad01.svg">
 <meta property="og:image" content="https://www.w3.org/TR/SVG/images/paths/cubic02.svg">
-<meta property="og:updated_time" content="2017-07-06T12:45:29.000Z">
+<meta property="og:image" content="https://www.w3.org/TR/SVG/images/painting/fillrule-nonzero.svg">
+<meta property="og:image" content="https://www.w3.org/TR/SVG/images/painting/fillrule-evenodd.svg">
+<meta property="og:image" content="https://www.w3.org/TR/SVG/images/painting/linecap.svg">
+<meta property="og:image" content="https://www.w3.org/TR/SVG/images/painting/linejoin.svg">
+<meta property="og:updated_time" content="2017-07-07T07:39:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="技术杂－svg乱炖">
 <meta name="twitter:description" content="点我查看原图">
@@ -61,10 +65,10 @@
       <nav id="sub-nav">
         
         <a id="nav-github-btn" class="nav-icon" target="_blank" href="https://github.com/regrex" title="goto github"></a>
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://regrex.github.io"></form>
       </div>
     </div>
   </div>
@@ -94,7 +98,8 @@
       
         <p><img src="http://imgh.us/basic.svg" alt="just for fun"><br><a href="http://imgh.us/basic.svg" target="_blank" rel="external">点我查看原图</a></p>
 <a id="more"></a>
-<h2 id="svg知识点小结"><a href="#svg知识点小结" class="headerlink" title="svg知识点小结"></a>svg知识点小结</h2><h3 id="通用属性"><a href="#通用属性" class="headerlink" title="通用属性"></a>通用属性</h3><ul>
+<h2 id="svg知识点小结"><a href="#svg知识点小结" class="headerlink" title="svg知识点小结"></a>svg知识点小结</h2><p>此文用于记录鄙人对svg的粗浅理解，跟svg相关的任何知识将持续在此更新</p>
+<h3 id="通用属性"><a href="#通用属性" class="headerlink" title="通用属性"></a>通用属性</h3><ul>
 <li>class</li>
 <li>style</li>
 </ul>
@@ -292,38 +297,52 @@
 <h3 id="路径指令"><a href="#路径指令" class="headerlink" title="路径指令"></a>路径指令</h3><p>除基本操作不区分大小写，其他大写表示绝对位移，小写表示相对位移</p>
 <ul>
 <li>基本操作<ul>
-<li>M：移动，(x, y)+</li>
+<li>M：移动，(x,y)+</li>
 <li>Z：闭合</li>
 </ul>
 </li>
 <li>直线<ul>
-<li>L\l：lineto，(x, y)+</li>
+<li>L\l：lineto，(x,y)+</li>
 <li>H\h：horizontal lineto (x)+</li>
 <li>V\v：vertical lineto (y)+</li>
 </ul>
 </li>
 <li>弧线<ul>
-<li>A\a：a segment of an ellipse  (rx, ry x-axis-rotation large-arc-flag, sweep-flag x, y)+ 其中x-axis-rotation是弧线的转角度数，large-arc-flag, sweep-flag决定了从相交椭圆中选择哪条圆弧。见下图<br><img src="https://www.w3.org/TR/SVG/images/paths/arcs02.svg" alt="path arcs示意图"></li>
+<li>A\a：a segment of an ellipse  (rx,ry x-axis-rotation large-arc-flag, sweep-flag x,y)+ 其中x-axis-rotation是弧线的转角度数，large-arc-flag, sweep-flag决定了从相交椭圆中选择哪条圆弧。见下图<br><img src="https://www.w3.org/TR/SVG/images/paths/arcs02.svg" alt="path arcs示意图"></li>
 </ul>
 </li>
 <li>二次贝塞尔曲线<ul>
-<li>Q\q：quadratic</li>
-<li>T\t：smooth quadratic，加了对称点的Q，需跟在Q后面，否则降级成直线<br><img src="https://www.w3.org/TR/SVG/images/paths/quad01.svg" alt="path quadratic"></li>
+<li>Q\q：quadratic (x1,y1 x,y)+</li>
+<li>T\t：smooth quadratic，(x,y)+ 加了对称点的Q，需跟在Q后面，否则降级成直线<br><img src="https://www.w3.org/TR/SVG/images/paths/quad01.svg" alt="path quadratic"></li>
 </ul>
 </li>
 <li>三次贝塞尔曲线<ul>
-<li>C\c：cubic</li>
-<li>S\s：smooth cubic，加了对称点的C，需跟在C后面，否则降级成Q<br><img src="https://www.w3.org/TR/SVG/images/paths/cubic02.svg" alt="path cubic"></li>
+<li>C\c：cubic (x1,y1 x2,y2 x,y)+</li>
+<li>S\s：smooth cubic，(x2,y2 x,y)+ 加了对称点的C，需跟在C后面，否则降级成Q<br><img src="https://www.w3.org/TR/SVG/images/paths/cubic02.svg" alt="path cubic"></li>
 </ul>
 </li>
 </ul>
-<h3 id="CSS属性清单"><a href="#CSS属性清单" class="headerlink" title="CSS属性清单"></a>CSS属性清单</h3><ul>
-<li>未完待续</li>
+<h3 id="CSS主要属性清单"><a href="#CSS主要属性清单" class="headerlink" title="CSS主要属性清单"></a>CSS主要属性清单</h3><p>最常用的fill和stroke，完整列表参见<a href="https://www.w3.org/TR/SVG/styling.html" target="_blank" rel="external">svg styling</a></p>
+<h4 id="fill"><a href="#fill" class="headerlink" title="fill"></a>fill</h4><ul>
+<li>fill</li>
+<li>fill-opacity</li>
+<li>fill-rule nonzero|evenodd 判断是填充的算法规则：在任意点延伸的一条穿过图形的线与图形路径的相交点的正交反交（正交标记1，反交标记-1）数量来判断，正交：顺时针相交，反交：逆时针相交<ul>
+<li>nonzero 表示正反交数量为非0的时候填充，0的时候不填充。如图 <img src="https://www.w3.org/TR/SVG/images/painting/fillrule-nonzero.svg" alt="nonzero"></li>
+<li>evenodd 表示正反交数量为奇数的时候填充，偶数的时候不填充。如图 <img src="https://www.w3.org/TR/SVG/images/painting/fillrule-evenodd.svg" alt="evenodd"></li>
 </ul>
-<h3 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h3><ul>
-<li>未完待续</li>
+</li>
 </ul>
-<table>
+<h4 id="stroke"><a href="#stroke" class="headerlink" title="stroke"></a>stroke</h4><ul>
+<li>stroke</li>
+<li>stroke-width</li>
+<li>stroke-opactity</li>
+<li>stroke-linecap butt|round|square 如图 <img src="https://www.w3.org/TR/SVG/images/painting/linecap.svg" alt="lincap"></li>
+<li>stroke-linejion miter|round|bevel bevel的算法略诡异，待了解path实现细节 如图 <img src="https://www.w3.org/TR/SVG/images/painting/linejoin.svg" alt="linejoin"></li>
+<li>stroke-dasharray <dasharray> 定义描边虚线阵列，包含虚线粗细及间隔的设置，参数多样</dasharray></li>
+<li>stroke-dashoffset 虚线起始偏移量，移动在dasharray上的视觉起点</li>
+</ul>
+<p><a href="http://www.zhangxinxu.com/wordpress/2014/04/animateion-line-drawing-svg-path-%E5%8A%A8%E7%94%BB-%E8%B7%AF%E5%BE%84/" target="_blank" rel="external">利用足够大的dasharray和dashoffset来实现svg路径描边动画</a></p>
+<h3 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h3><table>
 <thead>
 <tr>
 <th>元素名</th>
@@ -343,11 +362,12 @@
 </tr>
 </tbody>
 </table>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>svg相关的知识点比较琐碎，涉及到的图层叠加、混合、填充等实现细节和算法规则还有待进一步了解。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/06/play-with-svg/" data-id="cj4s6gxdh0000v3f7gwk6e6a1" class="article-share-link">Share</a>
+      <a data-url="https://regrex.github.io/2017/07/06/play-with-svg/" data-id="cj4thnwus0000yof7ov3m9fli" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/svg/">svg</a></li></ul>
@@ -360,7 +380,7 @@
   
   
     <a href="/2017/07/02/vert20170702/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">草木杂－欲雨</div>
     </a>
   
@@ -378,7 +398,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">Mot-clés</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/svg/">svg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/thinking-FE/">thinking FE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活-草木/">生活 草木</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/逗比程序员-生活-IT/">逗比程序员 生活 IT</a></li></ul>
     </div>
@@ -388,7 +408,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nuage de mot-clés</h3>
     <div class="widget tagcloud">
       <a href="/tags/svg/" style="font-size: 10px;">svg</a> <a href="/tags/thinking-FE/" style="font-size: 10px;">thinking FE</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/生活-草木/" style="font-size: 10px;">生活 草木</a> <a href="/tags/逗比程序员-生活-IT/" style="font-size: 10px;">逗比程序员 生活 IT</a>
     </div>
@@ -407,7 +427,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -444,7 +464,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Regrex<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
