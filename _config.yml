@@ -7,8 +7,8 @@ title: <love>You & Me</love>
 subtitle: 芝兰生幽谷，不以无人而不芳
 description: 
 author: Regrex
-language:
-timezone:
+language: zh
+timezone: GMT
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
