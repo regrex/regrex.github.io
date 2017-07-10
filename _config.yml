@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: <love>You & Me</love>
-subtitle: 芝兰生幽谷，不以无人而不芳
+title: 芝兰生幽谷，不以无人而不芳
+subtitle: <love>You & Me</love>
 description: 
 author: Regrex
 language: zh
