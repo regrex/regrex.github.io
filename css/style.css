@@ -117,6 +117,13 @@ button::-moz-focus-inner {
   src: url("fonts/fontawesome-webfont.eot?v=#4.0.3");
   src: url("fonts/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("fonts/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
 }
+@font-face {
+  font-family: "YuWeiLiShuJT";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/yuwei.eot") /* IE9 */;
+  src: url("fonts/yuwei.eot?#iefix") format("embedded-opentype"), url("fonts/yuwei.woff") format("woff"), url("fonts/yuwei.ttf") format("truetype"), url("fonts/yuwei.svg#YuWeiLiShuJT") format("svg") /* iOS 4.1- */;
+}
 html,
 body,
 #container {
@@ -322,11 +329,11 @@ body {
 }
 #header-title {
   text-align: center;
-  height: 28px;
+  height: 36px;
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -14px;
+  margin-top: -18px;
 }
 #logo,
 #subtitle {
@@ -336,8 +343,9 @@ body {
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 #logo {
-  font-size: 28px;
-  line-height: 28px;
+  font-family: YuWeiLiShuJT;
+  font-size: 36px;
+  line-height: 36px;
   letter-spacing: 2px;
 }
 #subtitle {
